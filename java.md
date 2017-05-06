@@ -8,4 +8,9 @@ Java Critera
   * In java, the platform includes packages that start with java, org.omg., javax, along with other that are defined in Sun's standard extensions. Packages can hold subPackages which holds classes. Packages may also hold classes directly without any subpackages.
   * To specify a class is to be part of a package you must use the 'package' keyword before defining the package.subPackage.subSubPackageWhereTheFileIs;
   * packages are used to to "partition the java namespace and prevent name collisions" or in other words be able to reuse names for classes while the compiler is still able to discern the difference between the two.
+* Types
+    * What types does the language support?
+    * Are both reference and value types supported?
+    * Can new value types be created?
+  
  
