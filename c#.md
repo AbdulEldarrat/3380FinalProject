@@ -8,6 +8,6 @@ C# critera
   * C# uses namespaces heavily in two different ways. 
     * The .NET framework uses namespaces to organize its classes.
     * The traditional, declaring your own namespaces to control the scope of the class (method and variables).
-  * In c# we use the 'using' keyword which helps save the developer time that would be wasted on specifying the full name every time a method inside the class is to be called.
+  * In c# we use the 'using' keyword which helps save the developer time that would be wasted on specifying the full name every time a method inside the class is to be called. For example " using Namespace; "
   * In many cases using an 'alias' for a namespace is useful. If you have a namespace that has nested namespaces, it would be good practice to use an 'alias'. for example " using alias = Project.Service.Nested; "
 * 
