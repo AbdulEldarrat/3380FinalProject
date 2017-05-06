@@ -11,7 +11,10 @@ C# critera
   * In c# we use the 'using' keyword which helps save the developer time that would be wasted on specifying the full name every time a method inside the class is to be called. For example " using Namespace; "
   * In many cases using an 'alias' for a namespace is useful. If you have a namespace that has nested namespaces, it would be good practice to use an 'alias'. for example " using alias = Project.Service.Nested; "
 * Types ------------------------------------------------------
-    * What types does the language support?
-    * Are both reference and value types supported?
+    * bool, char, byte sbyte, uint, long, ulong, object, ushort. string. With Object and String as the only non-simple types.
+    * Are both reference and value types supported? http://www.albahari.com/valuevsreftypes.aspx
+    * In C# both reference and value types are supported. C# provides two types - a class and a struct. Structs can have similar members as classes, which can be fields, methods, perperties, or operators.
+      * The following types are Reference types: class interface
     * Can new value types be created?
+    * 
 ---------------------------------------------------------------
