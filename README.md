@@ -8,8 +8,8 @@ Group Partners:
   Darius Washington
   
 Usefull links: 
-Java Criteria - https://github.com/AbdulEldarrat/4330FinalProject/blob/master/java.md
-C# Criteria - https://github.com/AbdulEldarrat/4330FinalProject/blob/master/c%23.md
+- Java Criteria - https://github.com/AbdulEldarrat/4330FinalProject/blob/master/java.md
+- C# Criteria - https://github.com/AbdulEldarrat/4330FinalProject/blob/master/c%23.md
 
 What are the major differences between Java and C#? - https://www.quora.com/What-are-the-major-differences-between-Java-and-C
 
