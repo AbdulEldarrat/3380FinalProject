@@ -55,6 +55,23 @@ C# critera
 * 16)Listeners and Event Handlers
 
 * 17)Singleton
+   * A singleton can be implemented many ways in C#.  Some ways allow the singleton to be thread-safe and lazily instantiated, others do not. All implementations do share similarities though. All have a single constructor which is private and parameterless. The class is also sealed, which means it can not be subclassed or inherited from. Additionally, the class implementation has a static variable that holds a reference to the singleton instance if it has been instantiated. Lastly, a public static method must exist to get a reference to the instance of the Singleton. Singletons can be made thread-safe using locks to ensure threads don't interfere with another, and full lazy instantiation can be achieved by using a nested class. The following code example should help to demonstrate this:
+   
+   ```c#
+   public sealed class Singleton{
+   
+    private Singleton(){}
+    public static Singleton Instance { get { return Nested.instance; } }
+        
+    private class Nested{
+        // Explicit static constructor to tell C# compiler
+        // not to mark type as beforefieldinit
+        static Nested(){}
+
+        internal static readonly Singleton instance = new Singleton();
+    }
+   }
+   ```
 
 * 18)Procedural Programming
   * Both C# and Java support procedural programming, as it is up to the developer to implement the OOP features the language brings. Procedural programming consists of sequences of imperative statements, assignments, tests, loops and invocations of sub procedures. This type of programming is not encouraged in OOP due to the challenges and difficulties it brings with maintenance of the code-base in large-scale projects.
