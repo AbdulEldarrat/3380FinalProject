@@ -29,7 +29,8 @@ Java Critera
   * In Java an interface contains definitions for a group of related functionalities that either a class or a struct can implement. An interface in C# is used similarly to C#.
   * Abilities - Interfaces in Java can contain methods, properties, events, indexers, or any combination of these member types. An interface cannot however contain constants, fields, operators, instance constructors, destructors, or types. interfaces can implement other interfaces.
   * Interfaces are used in many cases to create multiple inheritance, as well as allowing inherited-class objects to be used in place of base-class objects, and allow inherited-class objects to make use of base-class behaviors.
-* 9)Reflection http://stackoverflow.com/questions/37628/what-is-reflection-and-why-is-it-useful https://docs.oracle.com/javase/tutorial/reflect/
+* 9)Inheritance/extension
+* 10)Reflection http://stackoverflow.com/questions/37628/what-is-reflection-and-why-is-it-useful https://docs.oracle.com/javase/tutorial/reflect/
   * What reflection abilities are supported?
   * How is reflection used?
    
