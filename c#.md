@@ -33,6 +33,10 @@ C# critera
   * A Backing variable is: A field that is used by properties when you want to modify or use that private field data.Backing variables in c# is recomended in most senarios when you are not using automatic properties. http://idiotcoder.com/understanding-backing-fields-properties-in-csharp/
   * Computed properties? https://csharp.2000things.com/tag/calculated-property/
   * C# is absolutely able to use calculated values in getters and setters.
+* 8)Interfaces / protocols https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/interfaces/index
+  * In C# an interface contains definitions for a group of related functionalities that either a class or a struct can implement. An interface in C# is used similarly to Java.
+  * Abilities - Interfaces in C# can contain methods, properties, events, indexers, or any combination of these member types. An interface cannot however contain constants, fields, operators, instance constructors, destructors, or types. Instances can implement other interfaces.
+  * How is it used?
 
   
   
