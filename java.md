@@ -19,7 +19,8 @@ Java Critera
    * In java there are three mechanisms that ensure proper initilization of classes (objects). instance initializers, instance variable initializers, and constructors.
    * Destructing/de-initializing  http://stackoverflow.com/questions/171952/is-there-a-destructor-for-java
    * Since Java is a garbage collected language we cannot predict when or if an object will be destroyed. The reason is because all Java objects are heap allocated and thus garbage collected.
- 
+ * Instance reference name in data type (class)
+   * In Java we use the 'this' keyword to refer to the current instance of the class.
 -------------------------------------------------------------
 * Procedural Programming
   * Both C# and Java support procedural programming, as it is up to the developer to implement the OOP features the language brings. Procedural programming consists of sequences of imperative statements, assignments, tests, loops and invocations of sub procedures. This type of programming is not encouraged in OOP due to the challenges and difficulties it brings with maintenance of the code-base in large-scale projects.
