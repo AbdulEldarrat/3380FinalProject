@@ -42,9 +42,6 @@ C# critera
   * What reflection abilities are supported?
   * How is reflection used?
   
-  
-  
---------------------------------------------------------------------------------------------------
 * 11)Memory Management
 
 * 12)Comparisons of References and Values
