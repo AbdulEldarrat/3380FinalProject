@@ -9,8 +9,6 @@ Java Critera
   * To specify a class is to be part of a package you must use the 'package' keyword before defining the package.subPackage.subSubPackageWhereTheFileIs;
   * packages are used to to "partition the java namespace and prevent name collisions" or in other words be able to reuse names for classes while the compiler is still able to discern the difference between the two.
 * Types
-    * What types does the language support?
-    * Are both reference and value types supported?
-    * Can new value types be created?
+    * Java supports a multitude of types from Primitive data types: byte, short, int, long, float, double, boolean, and char. Java also has Reference data types, which would be any variable that is created using defined constructors of its class. The refeence variables are used to do just that, reference. The default value of any reference variable is null. In java you also have objects and classes. A class is used as a blueprint of the object with the fields storing the state and the method defining the behavior of the object. You cannot create a new primitive data type, you can  however mock a new object to act as if it was though.
   
  
