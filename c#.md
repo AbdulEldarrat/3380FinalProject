@@ -18,3 +18,8 @@ C# critera
     * Value types are created on the stack. The following types are value types: structs and enumerations.
       * Structs fall into the following categories: Numeric types (integra, floating-point, and decimal types), bool, and user defined structs.
     * It is possible to create a new value type in C#. C# does not however, have a type system that supports checking integer ranges at compile time, so you would not be able to change the range of your new type with a range from 1-100 when the limit is set to 0-255.
+
+
+
+* MultiThreading
+    * C# supports parallel execution of applications through multithreading, like many other languages. This functionality is dependent on the *System.Threading.Thread* class, which enables creation and access of threads adjacent to the main thread. This system *Thread* class has a *CurrentThread* property that is used to access threads. Similar to other languages, there are four distinct states threads can be in. Unstarted, Ready, Not Runnable, and Dead. When a thread has been created, but not yet started execution it lies in the Unstarted state. Once the *start()* method of the Thread is called, it enters the *Ready* state. This signifies the thread is waiting to be scheduled on the CPU. If thread is interrupted by the *sleep()* method, the *wait()* method, or I/O operations, it is placed in the *Not Runnable* state until it can be scheduled on the CPU again. Lastly, when a thread completes execution or is aborted, it is placed in the *Dead* state.
