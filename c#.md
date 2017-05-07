@@ -37,7 +37,9 @@ C# critera
   * In C# an interface contains definitions for a group of related functionalities that either a class or a struct can implement. An interface in C# is used similarly to Java.
   * Abilities - Interfaces in C# can contain methods, properties, events, indexers, or any combination of these member types. An interface cannot however contain constants, fields, operators, instance constructors, destructors, or types. Instances can implement other interfaces.
   * Interfaces are used in many cases to create multiple inheritance, as well as allowing inherited-class objects to be used in place of base-class objects, and allow inherited-class objects to make use of base-class behaviors.
-
+* 9)Reflection https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/concepts/reflection  https://www.tutorialspoint.com/csharp/csharp_reflection.htm
+  * What reflection abilities are supported?
+  * How is reflection used?
   
   
   
