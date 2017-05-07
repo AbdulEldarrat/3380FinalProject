@@ -15,12 +15,12 @@ Java Critera
 -------------------------------------------------------------
 * Functional Programming
   * Functional Programming can be achieved in Java using lambda expressions and anonymous functions. Using these, functions can be passed as arguments to other functions, and *function factories* can be created. An example of this can be seen below, as new functions are produced
-  '''java
+  ```java
   Function<Integer, Function<Integer,Integer>> makeAdder = x -> y -> x + y;
   Function<Integer,Integer> add1 = makeAdder.apply(1);
   Function<Integer,Integer> add2 = makeAdder.apply(2);
   Function<Integer,Integer> add3 = makeAdder.apply(3);
-  '''
+  ```
 
 * MultiThreading
   * Like C#, Java also has defined states for threads. The *New* state is for threads that have not yet started execution. Once the *start()* method of the thread has been called, it moves to the *Runnable* state. In this state the thread is executing within the JVM. If a thread attempts to access a resource and it is blocked from waiting for that resource lock, it is placed in the *Blocked* state. If a thread is waiting indefinitely for another thread to perform an action, it moves to the *Waiting* state. Threads can be given timed waits, and if they are waiting on another thread for a specified amount of time they move to the *Timed Waiting* state. Lastly is the *Terminated* state, reserved for threads that have exited execution. Threads can be created by extending an existing **Thread** class, or implementing the **Runnable** interface. However the thread is created, it must begin execution using the *start()* method. Java threads can also be given priority to determine which threads should be scheduled before others, but how this is interpreted is up to the host platform and does not guarantee thread execution order.
