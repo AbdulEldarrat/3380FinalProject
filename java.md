@@ -25,6 +25,10 @@ Java Critera
   * Accessors in Java - In Java we use getters to 'Access' data and setters to 'mutate' data. Getters return a classes variable/value and a setter sets a classes variable or its value. 
   * Backing variables - Java does not use any backing variables. This is because there is no need to back a varibale when in java, instance variables are private which forces developers to use methods (getters, setters, and others) to restrict access.
   * Computed properties - Using a 'get' or 'set' method in Java can be used to 'get' or 'set' a value stored in memory. Or these methods can be used to 'get' or 'set' a custom value (computed). https://teamtreehouse.com/community/so-basically-getter-method-is-same-thing-as-computed-property
+* 8)Interfaces / protocols
+  * In Java an interface contains definitions for a group of related functionalities that either a class or a struct can implement. An interface in C# is used similarly to C#.
+  * Abilities - Interfaces in Java can contain methods, properties, events, indexers, or any combination of these member types. An interface cannot however contain constants, fields, operators, instance constructors, destructors, or types. interfaces can implement other interfaces.
+  * Interfaces are used in many cases to create multiple inheritance, as well as allowing inherited-class objects to be used in place of base-class objects, and allow inherited-class objects to make use of base-class behaviors.
   
    
    
