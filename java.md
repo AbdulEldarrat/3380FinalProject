@@ -15,7 +15,7 @@ Java Critera
 -------------------------------------------------------------
 * Functional Programming
   * Functional Programming can be achieved in Java using lambda expressions and anonymous functions. Using these, functions can be passed as arguments to other functions, and *function factories* can be created. An example of this can be seen below, as new functions are produced
-  '''Java
+  '''java
   Function<Integer, Function<Integer,Integer>> makeAdder = x -> y -> x + y;
   Function<Integer,Integer> add1 = makeAdder.apply(1);
   Function<Integer,Integer> add2 = makeAdder.apply(2);
