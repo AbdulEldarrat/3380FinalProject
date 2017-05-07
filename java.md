@@ -13,6 +13,9 @@ Java Critera
   
  
 -------------------------------------------------------------
+* Procedural Programming
+  * Both C# and Java support procedural programming, as it is up to the developer to implement the OOP features the language brings. Procedural programming consists of sequences of imperative statements, assignments, tests, loops and invocations of sub procedures. This type of programming is not encouraged in OOP due to the challenges and difficulties it brings with maintenance of the code-base in large-scale projects.
+
 * Functional Programming
   * Functional Programming can be achieved in Java using lambda expressions and anonymous functions. Using these, functions can be passed as arguments to other functions, and *function factories* can be created. An example of this can be seen below, as new functions are produced
   
