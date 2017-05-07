@@ -10,7 +10,15 @@ Java Critera
   * packages are used to to "partition the java namespace and prevent name collisions" or in other words be able to reuse names for classes while the compiler is still able to discern the difference between the two.
 * Types
     * Java supports a multitude of types from Primitive data types: byte, short, int, long, float, double, boolean, and char. Java also has Reference data types, which would be any variable that is created using defined constructors of its class. The refeence variables are used to do just that, reference. The default value of any reference variable is null. In java you also have objects and classes. A class is used as a blueprint of the object with the fields storing the state and the method defining the behavior of the object. You cannot create a new primitive data type, you can  however mock a new object to act as if it was though.
-  
+ * Classes
+  * Defining
+  * A class in java is a blueprint from which individual objects are created. A class is defined by a first defining the access level, then use the 'class' keyword followed by the name of the class. What inside of the class you may have fields and methods.
+  * Creating new instances https://docs.oracle.com/javase/tutorial/reflect/member/ctorInstance.html
+  * In order to create a new instance of a class you need to call one of the two reflective methods. The first is 'java.lang.reflect.Constructor.newInstance()'. The second way is by calling the following method 'Class.newInstance()'. The former is preferred because of a few things: it can invoke any constructor regardless of the number of paremeters, it always wraps the thrown exception with 'InvocationTargetException', and it may invode private constructors under certain circumstances.
+  * Constructing/initializing http://www.javaworld.com/article/3040564/learn-java/java-101-class-and-object-initialization-in-java.html   http://www.javaworld.com/article/2076614/core-java/object-initialization-in-java.html
+  * In java there are three mechanisms that ensure proper initilization of classes (objects). instance initializers, instance variable initializers, and constructors.
+  * Destructing/de-initializing  http://stackoverflow.com/questions/171952/is-there-a-destructor-for-java
+  * Since Java is a garbage collected language we cannot predict when or if an object will be destroyed. The reason is because all Java objects are heap allocated and thus garbage collected.
  
 -------------------------------------------------------------
 * Procedural Programming
