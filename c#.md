@@ -21,6 +21,9 @@ C# critera
 
 
 --------------------------------------------------------------------------------------------------
+* Procedural Programming
+  * Both C# and Java support procedural programming, as it is up to the developer to implement the OOP features the language brings. Procedural programming consists of sequences of imperative statements, assignments, tests, loops and invocations of sub procedures. This type of programming is not encouraged in OOP due to the challenges and difficulties it brings with maintenance of the code-base in large-scale projects.
+
 * Functional Programming
   * C# can be considered a functional programming language as it does provide some features unique to higher order programming. As of C# 2.0, developers are allowed to pass and return functions as values for higher order functions, and includes limited support for anonymous delegates. Anonymous delegates allow the programmer to encapsulate a method reference in a *delegate* object. Delegate's do not care about the class of the object it references, only the method's argument types and return types must match. In C# 3.0 and 3.5 also came improved support for anonymous functions as true closures.
 
