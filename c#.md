@@ -18,7 +18,13 @@ C# critera
     * Value types are created on the stack. The following types are value types: structs and enumerations.
       * Structs fall into the following categories: Numeric types (integra, floating-point, and decimal types), bool, and user defined structs.
     * It is possible to create a new value type in C#. C# does not however, have a type system that supports checking integer ranges at compile time, so you would not be able to change the range of your new type with a range from 1-100 when the limit is set to 0-255.
-
+* Classes
+  * Defining https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/classes-and-structs/classes
+  * A class in C# is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit, and is used similarly to java, as a bluepring used to create instances or objects at run time. To define a class, you must define the access level, followed by the 'class' keyword and the name of your class. What follows are nay fields (controls the state) and methods(controls the behavior).
+  * Creating new instances https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/classes-and-structs/instance-constructors
+  * In C# Constructors are the primary way of creating a new instance as well as initilizing them at run time.
+  * Destructing/de-initializing https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/classes-and-structs/destructors
+  * In C# you can only destruct classes, desructors cannot be defined in structs. Classes may only have one destructor, they cannot be inherited or overloaded, nor can they be called (they are called automaticly). A destructor may not take modifiers or have parameters.
 
 --------------------------------------------------------------------------------------------------
 * Procedural Programming
