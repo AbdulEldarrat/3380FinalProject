@@ -25,7 +25,8 @@ C# critera
   * In C# Constructors are the primary way of creating a new instance as well as initilizing them at run time.
   * Destructing/de-initializing https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/classes-and-structs/destructors
   * In C# you can only destruct classes, desructors cannot be defined in structs. Classes may only have one destructor, they cannot be inherited or overloaded, nor can they be called (they are called automaticly). A destructor may not take modifiers or have parameters.
-
+* Instance reference name in data type (class)
+  * In C# we use the 'this' keyword to refer to the current instance of the class.
 --------------------------------------------------------------------------------------------------
 * Procedural Programming
   * Both C# and Java support procedural programming, as it is up to the developer to implement the OOP features the language brings. Procedural programming consists of sequences of imperative statements, assignments, tests, loops and invocations of sub procedures. This type of programming is not encouraged in OOP due to the challenges and difficulties it brings with maintenance of the code-base in large-scale projects.
