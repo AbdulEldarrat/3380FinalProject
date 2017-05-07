@@ -45,11 +45,25 @@ C# critera
   
   
 --------------------------------------------------------------------------------------------------
-* Procedural Programming
+* 11)Memory Management
+
+* 12)Comparisons of References and Values
+
+* 13)Null/Nil References
+
+* 14)Errors and Exception Handling
+
+* 15)Lambda Expressions, Closures, Functions as Types
+
+* 16)Listeners and Event Handlers
+
+* 17)Singleton
+
+* 18)Procedural Programming
   * Both C# and Java support procedural programming, as it is up to the developer to implement the OOP features the language brings. Procedural programming consists of sequences of imperative statements, assignments, tests, loops and invocations of sub procedures. This type of programming is not encouraged in OOP due to the challenges and difficulties it brings with maintenance of the code-base in large-scale projects.
 
-* Functional Programming
+* 19)Functional Programming
   * C# can be considered a functional programming language as it does provide some features unique to higher order programming. As of C# 2.0, developers are allowed to pass and return functions as values for higher order functions, and includes limited support for anonymous delegates. Anonymous delegates allow the programmer to encapsulate a method reference in a *delegate* object. Delegate's do not care about the class of the object it references, only the method's argument types and return types must match. In C# 3.0 and 3.5 also came improved support for anonymous functions as true closures.
 
-* MultiThreading
+* 20)MultiThreading
     * C# supports parallel execution of applications through multithreading, like many other languages. This functionality is dependent on the *System.Threading.Thread* class, which enables creation and access of threads adjacent to the main thread. This system *Thread* class has a *CurrentThread* property that is used to access threads. Similar to other languages, there are four distinct states threads can be in. Unstarted, Ready, Not Runnable, and Dead. When a thread has been created, but not yet started execution it lies in the Unstarted state. Once the *start()* method of the Thread is called, it enters the *Ready* state. This signifies the thread is waiting to be scheduled on the CPU. If thread is interrupted by the *sleep()* method, the *wait()* method, or I/O operations, it is placed in the *Not Runnable* state until it can be scheduled on the CPU again. Lastly, when a thread completes execution or is aborted, it is placed in the *Dead* state. C# also supports thread priority levels, but it's important not to set priorities of user threads too high. If this is done it is possible to lock up the host platform due to placing user tasks above system ones.
