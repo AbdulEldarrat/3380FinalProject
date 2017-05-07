@@ -34,13 +34,24 @@ Java Critera
   * What reflection abilities are supported?
   * How is reflection used?
    
-   
-   
--------------------------------------------------------------
-* Procedural Programming
+* 11) Memory Management
+
+* 12) Comparison of References and Values
+
+* 13) Null/Nil References
+
+* 14) Errors and Exception Handling
+
+* 15) Lambda Expressions, Closures, Functions as Types
+
+* 16) Listeners and Event Handlers
+
+* 17) Singleton
+
+* 18) Procedural Programming
   * Both C# and Java support procedural programming, as it is up to the developer to implement the OOP features the language brings. Procedural programming consists of sequences of imperative statements, assignments, tests, loops and invocations of sub procedures. This type of programming is not encouraged in OOP due to the challenges and difficulties it brings with maintenance of the code-base in large-scale projects.
 
-* Functional Programming
+* 19) Functional Programming
   * Functional Programming can be achieved in Java using lambda expressions and anonymous functions. Using these, functions can be passed as arguments to other functions, and *function factories* can be created. An example of this can be seen below, as new functions are produced
   
   ```java
@@ -50,5 +61,5 @@ Java Critera
   Function<Integer,Integer> add3 = makeAdder.apply(3);
   ```
 
-* MultiThreading
+* 20) MultiThreading
   * Like C#, Java also has defined states for threads. The *New* state is for threads that have not yet started execution. Once the *start()* method of the thread has been called, it moves to the *Runnable* state. In this state the thread is executing within the JVM. If a thread attempts to access a resource and it is blocked from waiting for that resource lock, it is placed in the *Blocked* state. If a thread is waiting indefinitely for another thread to perform an action, it moves to the *Waiting* state. Threads can be given timed waits, and if they are waiting on another thread for a specified amount of time they move to the *Timed Waiting* state. Lastly is the *Terminated* state, reserved for threads that have exited execution. Threads can be created by extending an existing **Thread** class, or implementing the **Runnable** interface. However the thread is created, it must begin execution using the *start()* method. Java threads can also be given priority to determine which threads should be scheduled before others, but how this is interpreted is up to the host platform and does not guarantee thread execution order.
