@@ -39,6 +39,7 @@ Java Criteria
 * 12)Comparison of References and Values
 
 * 13)Null/Nil References
+  * Java uses *null* as the value for an object to signify the object (really a reference pointer) points to nothing. When an reference pointer is set to *null* as it is when instantiated and not given a value, a *NullPointerException*. Primitive variables however are set 0 or the equivalent when they are not initialized with values by default. 
 
 * 14)Errors and Exception Handling
   * In Java Error and Exception handling can be taken care of using *try-catch* blocks. These allow potential exception-throwing operations inside the *try* block to perform in an environment that expects a potential failure. If an exception is thrown, the *catch* block (if given the correct Exception type) will perform whatever operations it contains. A simple example of this in practice can be seen below:
