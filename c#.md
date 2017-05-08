@@ -47,6 +47,7 @@ C# critera
 * 12)Comparisons of References and Values
 
 * 13)Null/Nil References
+  * C# uses the *null* literal to represent a reference which does not exist. Null is the default type for reference-type variables like objects, primitive and other ordinary value types cannot be null. C# does support *Nullable Types*, which are types that support the normal range of valid values plus a *null*.
 
 * 14)Errors and Exception Handling
   * Similarly to Java, C# allows Error and Exception handling through the use of *try-catch* blocks. These allow potential exception-throwing operations inside the try block to perform in an environment that expects a potential failure. If an exception is thrown, the catch block (if given the correct Exception type) will perform whatever operations it contains. Additionally, a *finally* block can be chained to the *try-catch* to ensure chosen instructions are executed before exiting. A simple example of this in practice can be seen below:
