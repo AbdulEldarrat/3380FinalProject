@@ -39,9 +39,14 @@ C# critera
   * Interfaces are used in many cases to create multiple inheritance, as well as allowing inherited-class objects to be used in place of base-class objects, and allow inherited-class objects to make use of base-class behaviors.
 * 9)Inheritance/extension
   * Inheritance is a core OOP characteristic, and is used pretty similarly across languages. Inheritance in C# can be defined as the process where one class aquires the properties of another class. We use the "extends" keyword in order to inherit from another class for example "class myClass extends hisClass". A subclass inherits the properties of its super class.
-* 10)Reflection ********************** https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/concepts/reflection  https://www.tutorialspoint.com/csharp/csharp_reflection.htm
-  * What reflection abilities are supported?
-  * How is reflection used?
+* 10)Reflection https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/concepts/reflection  https://www.tutorialspoint.com/csharp/csharp_reflection.htm
+  * Reflection in C# is simply the analysis of code by code in the same system at runtime. Reflection in most statically typed languages is very similar. In reflection you can access and manipulate classes, fields, methods, and constructors.
+  ```c#
+// Using GetType to get the type info:  
+int x = 15;  
+System.Type type = x.GetType();  
+System.Console.WriteLine(type);
+  ```
   
 * 11)Memory Management
   * C# uses automatic memory management similarly to Java, both employing the technique of *garbage collection*. The Garbage Collector implements specific policies to control the life cycle of data. When objects are created, they are marked as live by default. If an object can't be accessed by downstream code, it is no longer considered in use and is marked as eligible for destruction. After this happens, the object's *destructor* will run and destroy the object itself. This still leaves traces of the objects memory footprint, and is marked for collection. In the last phase of memory management, the garbage collector runs through the memory and removes data marked for collection. 
