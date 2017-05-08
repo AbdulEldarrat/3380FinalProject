@@ -45,6 +45,7 @@ C# critera
 * 11)Memory Management
 
 * 12)Comparisons of References and Values
+  * In C# when two strings are compared, a result is produced that says one string is greater than, less than, or equal. To perform the comparison *==* or *.Equals(object)* can be used. The result of using *==* is determined based on the compile-time types of the objects being compared. *.Equals(object)* is polymorphic and as such can be overridden. The implementation of *.Equals(object)* will depend on the execution-time type of the target object. Another thing to note is that if comparing two things that are *null*, *==* will not cause errors while *.Equals(object)* will. For ordinary data types *==* can be used.
 
 * 13)Null/Nil References
   * C# uses the *null* literal to represent a reference which does not exist. Null is the default type for reference-type variables like objects, primitive and other ordinary value types cannot be null. C# does support *Nullable Types*, which are types that support the normal range of valid values plus a *null*.
