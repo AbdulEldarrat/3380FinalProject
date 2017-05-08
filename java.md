@@ -45,6 +45,7 @@ Java Critera
 * 15)Lambda Expressions, Closures, Functions as Types
 
 * 16)Listeners and Event Handlers
+  * Java supports both Listeners and Event handlers. Listeners subscribe to events from a source using the *observer pattern*, and many listeners can be subscribed to a single source. For objects that support it, Listeners can be added using the *addObjectNameListener()* method. Event Handlers are objects that are responsible for handling events (as named). Handlers can be set for events using a method similar to Listeners. 
 
 * 17)Singleton
   * Singleton in Java can be implemented similarly to how it is done in C#. A private constructor, private static variable of Singleton instance, and public static method that returns instance of Singleton are still required. To ensure that operations on Singleton are threadsafe, the public static getter method can be given the *synchronized* modifer. *Double Checked Locking* can also be used, which is faster due to less working overhead. An example of this can be seen below:
