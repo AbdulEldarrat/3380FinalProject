@@ -79,7 +79,7 @@ public int Age
 * 9)Inheritance/extension
   * Inheritance is a core OOP characteristic, and is used pretty similarly across languages. Inheritance in C# can be defined as the process where one class aquires the properties of another class. We use the "extends" keyword in order to inherit from another class for example "class myClass extends hisClass". A subclass inherits the properties of its super class.
 * 10)Reflection 
-  * Reflection in C# is simply the analysis of code by code in the same system at runtime. Reflection in most statically typed languages is very similar. In reflection you can access and manipulate classes, fields, methods, and constructors.
+  * Reflection in C# is simply the analysis of code by code in the same system at runtime. Reflection in most statically typed languages is very similar. In reflection you can access and manipulate classes, fields, methods, and constructors. Below you can see a very simple example of reflection in C# where the type of a field is being accessed and analysed:
  ```c#
 // Using GetType to get the type info:  
 int x = 15;  
