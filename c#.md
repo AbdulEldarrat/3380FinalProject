@@ -11,14 +11,13 @@ C# critera
   * In many cases using an 'alias' for a namespace is useful. If you have a namespace that has nested namespaces, it would be good practice to use an 'alias'. for example " using alias = Project.Service.Nested; "
 * 4)Types
     * bool, char, byte sbyte, uint, long, ulong, object, ushort. string. With Object and String as the only non-simple types.
-    * Are both reference and value types supported? http://www.albahari.com/valuevsreftypes.aspx
+    * Are both reference and value types supported?
     * In C# both reference and value types are supported. C# provides two types - a class and a struct. Structs can have similar members as classes, which can be fields, methods, perperties, or operators.
     * Reference types are created on the heap. The following types are Reference types: dynamic, object, string. In order to declare a reference type you must use one of the following keywords: class, interface, delegate.
     * Value types are created on the stack. The following types are value types: structs and enumerations.
       * Structs fall into the following categories: Numeric types (integra, floating-point, and decimal types), bool, and user defined structs.
     * It is possible to create a new value type in C#. C# does not however, have a type system that supports checking integer ranges at compile time, so you would not be able to change the range of your new type with a range from 1-100 when the limit is set to 0-255.
 * 5)Classes
-  https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/classes-and-structs/classes
   ```c#
  public class myClass
 {
@@ -26,7 +25,7 @@ C# critera
 }
  ```
   * A class in C# is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit, and is used similarly to java, as a bluepring used to create instances or objects at run time. To define a class, you must define the access level, followed by the 'class' keyword and the name of your class. What follows are nay fields (controls the state) and methods(controls the behavior).
-  * Creating new instances https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/classes-and-structs/instance-constructors
+  * Creating new instances 
 ```c#
 class Equation
 {
@@ -41,7 +40,6 @@ class Equation
 }
    ```
   * In C# Constructors are the primary way of creating a new instance as well as initilizing them at run time.
-  * Destructing/de-initializing https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/classes-and-structs/destructors
   ```c#
   class myClass
 {
@@ -54,7 +52,7 @@ class Equation
   * In C# you can only destruct classes, desructors cannot be defined in structs. Classes may only have one destructor, they cannot be inherited or overloaded, nor can they be called (they are called automaticly). A destructor may not take modifiers or have parameters.
 * 6)Instance reference name in data type (class)
   * In C# we use the 'this' keyword to refer to the current instance of the class.
-* 7)Properties https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/classes-and-structs/properties
+* 7)Properties
   * A property is just a field, usually with public visiblity, with a mechanism for accessing and writing data to a private variable (get, set).
   * Accessors in C# - If a property has both a 'get' and 'set' accessor, both must be auto-implemented, which is defined by using the 'get' and 'set' keywords without any implementation of your own.
   * A Backing variable is: A field that is used by properties when you want to modify or use that private field data.Backing variables in c# is recomended in most senarios when you are not using automatic properties. http://idiotcoder.com/understanding-backing-fields-properties-in-csharp/
@@ -74,13 +72,13 @@ public int Age
 }
 ```
   * C# is absolutely able to use calculated values in getters and setters.
-* 8)Interfaces / protocols https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/interfaces/index
+* 8)Interfaces / protocols
   * In C# an interface contains definitions for a group of related functionalities that either a class or a struct can implement. An interface in C# is used similarly to Java.
   * Abilities - Interfaces in C# can contain methods, properties, events, indexers, or any combination of these member types. An interface cannot however contain constants, fields, operators, instance constructors, destructors, or types. Instances can implement other interfaces.
   * Interfaces are used in many cases to create multiple inheritance, as well as allowing inherited-class objects to be used in place of base-class objects, and allow inherited-class objects to make use of base-class behaviors.
 * 9)Inheritance/extension
   * Inheritance is a core OOP characteristic, and is used pretty similarly across languages. Inheritance in C# can be defined as the process where one class aquires the properties of another class. We use the "extends" keyword in order to inherit from another class for example "class myClass extends hisClass". A subclass inherits the properties of its super class.
-* 10)Reflection https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/concepts/reflection  https://www.tutorialspoint.com/csharp/csharp_reflection.htm
+* 10)Reflection 
   * Reflection in C# is simply the analysis of code by code in the same system at runtime. Reflection in most statically typed languages is very similar. In reflection you can access and manipulate classes, fields, methods, and constructors.
  ```c#
 // Using GetType to get the type info:  
