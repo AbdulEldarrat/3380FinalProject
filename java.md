@@ -34,7 +34,7 @@ Java Criteria
 * 10)Reflection ********************************* http://stackoverflow.com/questions/37628/what-is-reflection-and-why-is-it-useful https://docs.oracle.com/javase/tutorial/reflect/
   * What reflection abilities are supported?
   * Reflection in Java is simply the analysis of code by code in the same system at runtime. Reflection in most statically types languages is very similar. In reflection you can access and manipulate classes, fields, methods, and constructors.
-  
+  ```java
   public class FieldSpy<T> {
     public boolean[][] b = {{ false, false }, { true, true } };
     public String name  = "Alice";
@@ -56,7 +56,7 @@ Java Criteria
 	}
     }
 }
-   
+``` 
 * 11)Memory Management
   * Java objects reside in a space called the *heap*. The size of the heap varies and can increase or decrease in size while the application runs. When the size of the heap goes over a preset max value, *Garbage Collection* takes over. During this garbage collection objects that are no longer used are cleared, making more space for new objects.
   * The heap is sometimes divided into two areas (or generations) called the nursery (or young space) and the old space. The nursery is a part of the heap reserved for allocation of new objects. When the nursery becomes full, garbage is collected by running a special young collection, where all objects that have lived long enough in the nursery are promoted (moved) to the old space, thus freeing up the nursery for more object allocation. When the old space becomes full garbage is collected there, a process called an old collection.
