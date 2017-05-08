@@ -1,5 +1,8 @@
 C# critera
 
+  ```c#
+  
+    ```
 * 1)Language purpose/genisis
   * C# was created to enable developers to build applications on the .NET framework and the syntax as well as functionality is very similar to java. This language was developed to make it easier to build apps on the .NET framework. By building these applcations on the .NET framework developers can call the code (in the framework) without writing it, and thus reducing the time it takes to build one of these apps.
 * 2)Unique features of the language
@@ -19,11 +22,39 @@ C# critera
       * Structs fall into the following categories: Numeric types (integra, floating-point, and decimal types), bool, and user defined structs.
     * It is possible to create a new value type in C#. C# does not however, have a type system that supports checking integer ranges at compile time, so you would not be able to change the range of your new type with a range from 1-100 when the limit is set to 0-255.
 * 5)Classes
-  * Defining https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/classes-and-structs/classes
+  https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/classes-and-structs/classes
+  ```c#
+ public class myClass
+{
+    //Fields, properties, methods and events go here...
+}
+ ```
   * A class in C# is essentially a data structure that encapsulates a set of data and behaviors that belong together as a logical unit, and is used similarly to java, as a bluepring used to create instances or objects at run time. To define a class, you must define the access level, followed by the 'class' keyword and the name of your class. What follows are nay fields (controls the state) and methods(controls the behavior).
   * Creating new instances https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/classes-and-structs/instance-constructors
+```c#
+class Equation
+{
+    public int x, y;
+
+    // constructor
+    public Equation()
+    {
+        x = 0;
+        y = 0;
+    }
+}
+   ```
   * In C# Constructors are the primary way of creating a new instance as well as initilizing them at run time.
   * Destructing/de-initializing https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/classes-and-structs/destructors
+  ```c#
+  class myClass
+{
+    ~myClassDestructor()  // destructor
+    {
+        // cleanup statements...
+    }
+}
+    ```
   * In C# you can only destruct classes, desructors cannot be defined in structs. Classes may only have one destructor, they cannot be inherited or overloaded, nor can they be called (they are called automaticly). A destructor may not take modifiers or have parameters.
 * 6)Instance reference name in data type (class)
   * In C# we use the 'this' keyword to refer to the current instance of the class.
@@ -32,6 +63,20 @@ C# critera
   * Accessors in C# - If a property has both a 'get' and 'set' accessor, both must be auto-implemented, which is defined by using the 'get' and 'set' keywords without any implementation of your own.
   * A Backing variable is: A field that is used by properties when you want to modify or use that private field data.Backing variables in c# is recomended in most senarios when you are not using automatic properties. http://idiotcoder.com/understanding-backing-fields-properties-in-csharp/
   * Computed properties? https://csharp.2000things.com/tag/calculated-property/
+```c#
+private int age;
+public int Age
+{
+    get
+    {
+        return age;
+    }
+    set
+    {
+        age = value;
+    }
+}
+   ```
   * C# is absolutely able to use calculated values in getters and setters.
 * 8)Interfaces / protocols https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/interfaces/index
   * In C# an interface contains definitions for a group of related functionalities that either a class or a struct can implement. An interface in C# is used similarly to Java.
