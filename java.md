@@ -37,7 +37,7 @@ Java Criteria
   * Accessors in Java - In Java we use getters to 'Access' data and setters to 'mutate' data. Getters return a classes variable/value and a setter sets a classes variable or its value. 
   * Backing variables - Java does not use any backing variables. This is because there is no need to back a varibale when in java, instance variables are private which forces developers to use methods (getters, setters, and others) to restrict access.
   * Computed properties - Using a 'get' or 'set' method in Java can be used to 'get' or 'set' a value stored in memory. Or these methods can be used to 'get' or 'set' a custom value (computed).
-  ```java
+```java
   // Stored properties
 var firstName: String = "First"
 var lastName: String = "Last"
