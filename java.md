@@ -4,7 +4,7 @@ Java Criteria
   * Java was created to address the issue of uniformality. The creators of java wanted to have a language tat would be as few implemnetation dependencies as possible. Meant to "write once and run anywhere". Java wasn't necessaritly meant to replace any other languag but was somewhat derived from c and c++ but more high level language then the both of them.
 * 2)Unique features of the language
   * A Java Application can run on any operating system that can run a JVM (Java Virtual Machine). This makes Java a language that nearly anyone can compile and run on their machine.
-* 3)Name spaces (https://www.cs.ait.ac.th/~on/O/oreilly/java-ent/jnut/ch02_11.htm)
+* 3)Name spaces
   * In java, the platform includes packages that start with java, org.omg., javax, along with other that are defined in Sun's standard extensions. Packages can hold subPackages which holds classes. Packages may also hold classes directly without any subpackages.
   * To specify a class is to be part of a package you must use the 'package' keyword before defining the package.subPackage.subSubPackageWhereTheFileIs;
   * packages are used to to "partition the java namespace and prevent name collisions" or in other words be able to reuse names for classes while the compiler is still able to discern the difference between the two.
@@ -13,26 +13,59 @@ Java Criteria
  * 5)Classes
    * Defining
    * A class in java is a blueprint from which individual objects are created. A class is defined by a first defining the access level, then use the 'class' keyword followed by the name of the class. What inside of the class you may have fields and methods.
-   * Creating new instances https://docs.oracle.com/javase/tutorial/reflect/member/ctorInstance.html
+   * Creating new instances
    * In order to create a new instance of a class you need to call one of the two reflective methods. The first is 'java.lang.reflect.Constructor.newInstance()'. The second way is by calling the following method 'Class.newInstance()'. The former is preferred because of a few things: it can invoke any constructor regardless of the number of paremeters, it always wraps the thrown exception with 'InvocationTargetException', and it may invode private constructors under certain circumstances.
-   * Constructing/initializing http://www.javaworld.com/article/3040564/learn-java/java-101-class-and-object-initialization-in-java.html   http://www.javaworld.com/article/2076614/core-java/object-initialization-in-java.html
-   * In java there are three mechanisms that ensure proper initilization of classes (objects). instance initializers, instance variable initializers, and constructors.
-   * Destructing/de-initializing  http://stackoverflow.com/questions/171952/is-there-a-destructor-for-java
+   * In java there are three mechanisms that ensure proper initilization of classes (objects). instance initializers, instance variable initializers, and constructors. We can initilize the default values of these variables. For example:
+ ```java   
+   class SomeClass
+{
+   static boolean b;
+   static byte by;
+   static char c;
+   static double d;
+   static float f;
+   static int i;
+   static long l;
+   static short s;
+   static String st;
+}
+```
    * Since Java is a garbage collected language we cannot predict when or if an object will be destroyed. The reason is because all Java objects are heap allocated and thus garbage collected.
  * 6)Instance reference name in data type (class)
    * In Java we use the 'this' keyword to refer to the current instance of the class.
 * 7)Properties
   * Accessors in Java - In Java we use getters to 'Access' data and setters to 'mutate' data. Getters return a classes variable/value and a setter sets a classes variable or its value. 
   * Backing variables - Java does not use any backing variables. This is because there is no need to back a varibale when in java, instance variables are private which forces developers to use methods (getters, setters, and others) to restrict access.
-  * Computed properties - Using a 'get' or 'set' method in Java can be used to 'get' or 'set' a value stored in memory. Or these methods can be used to 'get' or 'set' a custom value (computed). https://teamtreehouse.com/community/so-basically-getter-method-is-same-thing-as-computed-property
+  * Computed properties - Using a 'get' or 'set' method in Java can be used to 'get' or 'set' a value stored in memory. Or these methods can be used to 'get' or 'set' a custom value (computed).
+  ```java
+  // Stored properties
+var firstName: String = "First"
+var lastName: String = "Last"
+
+// Computed property
+var fullName: String {
+   return "\(firstName) \(lastName)"
+}
+
+// Getting the property
+fullName
+
+// Alternatively, you could use a function
+func fullName() -> String {
+   return "\(firstName) \(lastName)"
+}
+
+// Getting fullName
+fullName()
+```
+
 * 8)Interfaces / protocols
   * In Java an interface contains definitions for a group of related functionalities that either a class or a struct can implement. An interface in C# is used similarly to C#.
   * Abilities - Interfaces in Java can contain methods, properties, events, indexers, or any combination of these member types. An interface cannot however contain constants, fields, operators, instance constructors, destructors, or types. interfaces can implement other interfaces.
   * Interfaces are used in many cases to create multiple inheritance, as well as allowing inherited-class objects to be used in place of base-class objects, and allow inherited-class objects to make use of base-class behaviors.
 * 9)Inheritance/extension
   * Inheritance in Java can be defined as the process where one class aquires the properties of another class. We use the "extends" keyword in order to inherit from another class for example "class myClass extends hisClass". A subclass inherits the properties of its super class.
-* 10)Reflection ********************************* http://stackoverflow.com/questions/37628/what-is-reflection-and-why-is-it-useful https://docs.oracle.com/javase/tutorial/reflect/
-  * What reflection abilities are supported?
+* 10)Reflection
   * Reflection in Java is simply the analysis of code by code in the same system at runtime. Reflection in most statically types languages is very similar. In reflection you can access and manipulate classes, fields, methods, and constructors.
   ```java
   public class FieldSpy<T> {
@@ -45,7 +78,9 @@ Java Criteria
 	try {
 	    Class<?> c = Class.forName(args[0]);
 	    Field f = c.getField(args[1]);
+	    //gets the type of f
 	    System.out.format("Type: %s%n", f.getType());
+	    //gets the generic type of f
 	    System.out.format("GenericType: %s%n", f.getGenericType());
 
         // production code should handle these exceptions more gracefully
