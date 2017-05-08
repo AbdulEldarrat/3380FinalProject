@@ -50,7 +50,7 @@ class Equation
         // cleanup statements...
     }
 }
-    ```
+  ```
   * In C# you can only destruct classes, desructors cannot be defined in structs. Classes may only have one destructor, they cannot be inherited or overloaded, nor can they be called (they are called automaticly). A destructor may not take modifiers or have parameters.
 * 6)Instance reference name in data type (class)
   * In C# we use the 'this' keyword to refer to the current instance of the class.
@@ -72,7 +72,7 @@ public int Age
         age = value;
     }
 }
-   ```
+```
   * C# is absolutely able to use calculated values in getters and setters.
 * 8)Interfaces / protocols https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/interfaces/index
   * In C# an interface contains definitions for a group of related functionalities that either a class or a struct can implement. An interface in C# is used similarly to Java.
@@ -82,13 +82,12 @@ public int Age
   * Inheritance is a core OOP characteristic, and is used pretty similarly across languages. Inheritance in C# can be defined as the process where one class aquires the properties of another class. We use the "extends" keyword in order to inherit from another class for example "class myClass extends hisClass". A subclass inherits the properties of its super class.
 * 10)Reflection https://docs.microsoft.com/en-us/dotnet/articles/csharp/programming-guide/concepts/reflection  https://www.tutorialspoint.com/csharp/csharp_reflection.htm
   * Reflection in C# is simply the analysis of code by code in the same system at runtime. Reflection in most statically typed languages is very similar. In reflection you can access and manipulate classes, fields, methods, and constructors.
-  ```c#
+ ```c#
 // Using GetType to get the type info:  
 int x = 15;  
 System.Type type = x.GetType();  
 System.Console.WriteLine(type);
-  ```
-  
+ ```
 * 11)Memory Management
   * C# uses automatic memory management similarly to Java, both employing the technique of *garbage collection*. The Garbage Collector implements specific policies to control the life cycle of data. When objects are created, they are marked as live by default. If an object can't be accessed by downstream code, it is no longer considered in use and is marked as eligible for destruction. After this happens, the object's *destructor* will run and destroy the object itself. This still leaves traces of the objects memory footprint, and is marked for collection. In the last phase of memory management, the garbage collector runs through the memory and removes data marked for collection. 
 * 12)Comparisons of References and Values
