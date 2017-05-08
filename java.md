@@ -37,6 +37,7 @@ Java Criteria
 * 11)Memory Management
 
 * 12)Comparison of References and Values
+  * To compare primitive and ordinary data types in Java, the *==* is preferred. However, if objects are to be compared the *.equals(object)* method should be used if it is provided. When the *==* sign is used on objects in Java, the actual references to the objects are checked for comparison. If the value of the object is to be compared, use *.equals(object)*.
 
 * 13)Null/Nil References
   * Java uses *null* as the value for an object to signify the object (really a reference pointer) points to nothing. When an reference pointer is set to *null* as it is when instantiated and not given a value, a *NullPointerException*. Primitive variables however are set 0 or the equivalent when they are not initialized with values by default. 
