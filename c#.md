@@ -43,7 +43,7 @@ C# critera
   * How is reflection used?
   
 * 11)Memory Management
-
+  * C# uses automatic memory management similarly to Java, both employing the technique of *garbage collection*. The Garbage Collector implements specific policies to control the life cycle of data. When objects are created, they are marked as live by default. If an object can't be accessed by downstream code, it is no longer considered in use and is marked as eligible for destruction. After this happens, the object's *destructor* will run and destroy the object itself. This still leaves traces of the objects memory footprint, and is marked for collection. In the last phase of memory management, the garbage collector runs through the memory and removes data marked for collection. 
 * 12)Comparisons of References and Values
   * In C# when two strings are compared, a result is produced that says one string is greater than, less than, or equal. To perform the comparison *==* or *.Equals(object)* can be used. The result of using *==* is determined based on the compile-time types of the objects being compared. *.Equals(object)* is polymorphic and as such can be overridden. The implementation of *.Equals(object)* will depend on the execution-time type of the target object. Another thing to note is that if comparing two things that are *null*, *==* will not cause errors while *.Equals(object)* will. For ordinary data types *==* can be used.
 
