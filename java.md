@@ -43,6 +43,20 @@ Java Critera
 * 14)Errors and Exception Handling
 
 * 15)Lambda Expressions, Closures, Functions as Types
+  * In Java, Lambda expressions let you express instances of single-method classes more compactly. They enable you to treat functionality as method argument (code as data), and functions as types.  The recipient of lambda's does not need to know that a Lambda is involved, instead it accepts an Interface with the appropriate method. The simplest way of setting all this up is by creating a functional interface. An example doing just this can be seen below:
+  
+  ```java
+  public interface TwoArgIntOperator {
+    public int op(int a, int b);
+  }
+
+  //elsewhere:
+  static int method(TwoArgIntOperator operator) {
+     return operator.op(5, 10);
+  }
+  ```
+  
+  * A closure is a block of code that can be referenced (and passed around) with access to the variables of the enclosing scope. They can be achieved using anonymous inner classes (which require all local variables *final*) or using Lambdas in Java 8+
 
 * 16)Listeners and Event Handlers
   * Java supports both Listeners and Event handlers. Listeners subscribe to events from a source using the *observer pattern*, and many listeners can be subscribed to a single source. For objects that support it, Listeners can be added using the *addObjectNameListener()* method. Event Handlers are objects that are responsible for handling events (as named). Handlers can be set for events using a method similar to Listeners. 
