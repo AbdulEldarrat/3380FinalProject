@@ -49,6 +49,23 @@ C# critera
 * 13)Null/Nil References
 
 * 14)Errors and Exception Handling
+  * Similarly to Java, C# allows Error and Exception handling through the use of *try-catch* blocks. These allow potential exception-throwing operations inside the try block to perform in an environment that expects a potential failure. If an exception is thrown, the catch block (if given the correct Exception type) will perform whatever operations it contains. Additionally, a *finally* block can be chained to the *try-catch* to ensure chosen instructions are executed before exiting. A simple example of this in practice can be seen below:
+  
+  ```c#
+  try{
+       result = num1 / num2;
+     }catch (DivideByZeroException e){
+       Console.WriteLine("Exception caught: {0}", e);
+     }finally{
+       cleanUp(); 
+     }
+  ```
+  * To define your own Exceptions, a new Class can be created by extending the original Exception class or others already doing so.
+  ```c#
+   public class TempIsZeroException: Exception{
+     public TempIsZeroException(string message): base(message){}
+   }
+  ```
 
 * 15)Lambda Expressions, Closures, Functions as Types
   * Lambda Expressions in C# are anonymous functions that can be used to create delegates or expression tree types. They allow writing of local functions that can be passed as arguments or returned as the value of function calls. Delegates are the equivalent of *Function Types*
