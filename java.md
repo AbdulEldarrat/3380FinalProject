@@ -35,7 +35,9 @@ Java Criteria
   * How is reflection used?
    
 * 11)Memory Management
-
+  * Java objects reside in a space called the *heap*. The size of the heap varies and can increase or decrease in size while the application runs. When the size of the heap goes over a preset max value, *Garbage Collection* takes over. During this garbage collection objects that are no longer used are cleared, making more space for new objects.
+  * The heap is sometimes divided into two areas (or generations) called the nursery (or young space) and the old space. The nursery is a part of the heap reserved for allocation of new objects. When the nursery becomes full, garbage is collected by running a special young collection, where all objects that have lived long enough in the nursery are promoted (moved) to the old space, thus freeing up the nursery for more object allocation. When the old space becomes full garbage is collected there, a process called an old collection.
+  
 * 12)Comparison of References and Values
   * To compare primitive and ordinary data types in Java, the *==* is preferred. However, if objects are to be compared the *.equals(object)* method should be used if it is provided. When the *==* sign is used on objects in Java, the actual references to the objects are checked for comparison. If the value of the object is to be compared, use *.equals(object)*.
 
