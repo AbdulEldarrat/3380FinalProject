@@ -9,8 +9,8 @@ Group Partners:
   
   To make it easier on the grader, we have decided to link two seperate files. One for the java criteria and one for the C# criteria. You will find the following pages below.
 Usefull links: 
-- Java Criteria: [java.md]
-- C# Criteria: [c#.md]
+- Java Criteria: [java](java.md)
+- C# Criteria: [c#](c#.md)
 
 What are the major differences between Java and C#? - https://www.quora.com/What-are-the-major-differences-between-Java-and-C
 
