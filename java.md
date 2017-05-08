@@ -47,6 +47,26 @@ Java Critera
 * 16) Listeners and Event Handlers
 
 * 17) Singleton
+  * Singleton in Java can be implemented similarly to how it is done in C#. A private constructor, private static variable of Singleton instance, and public static method that returns instance of Singleton are still required. To ensure that operations on Singleton are threadsafe, the public static getter method can be given the *synchronized* modifer. *Double Checked Locking* can also be used, which is faster due to less working overhead. An example of this can be seen below:
+  
+  ```java
+  public class ThreadSafeSingleton {
+
+    private static ThreadSafeSingleton instance;
+    private ThreadSafeSingleton(){}
+    
+    public static ThreadSafeSingleton getInstanceUsingDoubleLocking(){
+        if(instance == null){
+            synchronized (ThreadSafeSingleton.class) {
+                if(instance == null){
+                    instance = new ThreadSafeSingleton();
+                }
+            }
+        }
+        return instance;
+    }
+  }
+  ```
 
 * 18) Procedural Programming
   * Both C# and Java support procedural programming, as it is up to the developer to implement the OOP features the language brings. Procedural programming consists of sequences of imperative statements, assignments, tests, loops and invocations of sub procedures. This type of programming is not encouraged in OOP due to the challenges and difficulties it brings with maintenance of the code-base in large-scale projects.
