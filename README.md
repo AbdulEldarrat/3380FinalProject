@@ -7,7 +7,7 @@ Group Partners:
   Abdul Eldarrat,
   Darius Washington
   
-  To make it easier on the grader, we have decided to link two seperate files. One for the java criteria and one for the C# criteria. You will find the following pages below.
+  To make it easier on the grader, we have decided to link two seperate files. One for the java criteria/code and one for the C# criteria/code. You will find the following pages below.
 Usefull links: 
 - Java Criteria: [java](java.md)
 - C# Criteria: [c#](c#.md)
