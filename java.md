@@ -41,6 +41,23 @@ Java Critera
 * 13)Null/Nil References
 
 * 14)Errors and Exception Handling
+  * In Java Error and Exception handling can be taken care of using *try-catch* blocks. These allow potential exception-throwing operations inside the *try* block to perform in an environment that expects a potential failure. If an exception is thrown, the *catch* block (if given the correct Exception type) will perform whatever operations it contains. A simple example of this in practice can be seen below:
+  
+  ```java
+  try{
+    customerObject = customerDao.findCustomerById(customerId);
+  }catch(Exception ex){
+    ex.printStackTrace(); //print stack to help debug and find root cause
+    return new Customer();
+  }
+  ```
+  * If the developer would like to *throw* Exceptions themselves to signify error, they can do so using the following syntax:
+  
+  ```java
+  if(object.isValid() == false){
+    throw new Exception();  //replace "Exception" with the specific Exception class that best suits application
+  }
+  ```
 
 * 15)Lambda Expressions, Closures, Functions as Types
   * In Java, Lambda expressions let you express instances of single-method classes more compactly. They enable you to treat functionality as method argument (code as data), and functions as types.  The recipient of lambda's does not need to know that a Lambda is involved, instead it accepts an Interface with the appropriate method. The simplest way of setting all this up is by creating a functional interface. An example doing just this can be seen below:
