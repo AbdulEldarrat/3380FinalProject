@@ -55,8 +55,8 @@ class Equation
 * 7)Properties
   * A property is just a field, usually with public visiblity, with a mechanism for accessing and writing data to a private variable (get, set).
   * Accessors in C# - If a property has both a 'get' and 'set' accessor, both must be auto-implemented, which is defined by using the 'get' and 'set' keywords without any implementation of your own.
-  * A Backing variable is: A field that is used by properties when you want to modify or use that private field data.Backing variables in c# is recomended in most senarios when you are not using automatic properties. http://idiotcoder.com/understanding-backing-fields-properties-in-csharp/
-  * Computed properties? https://csharp.2000things.com/tag/calculated-property/
+  * A Backing variable is: A field that is used by properties when you want to modify or use that private field data.Backing variables in c# is recomended in most senarios when you are not using automatic properties.
+  * Computed properties
 ```c#
 private int age;
 public int Age
