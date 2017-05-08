@@ -58,6 +58,13 @@ Java Critera
     throw new Exception();  //replace "Exception" with the specific Exception class that best suits application
   }
   ```
+  * The *try-catch* block can also be chained with a *finally* block to ensure some code is run before a method might exit after an exception is thrown.
+  
+  ```java
+  try{
+     }catch(Exception ex){
+     }finally{}
+  ```
 
 * 15)Lambda Expressions, Closures, Functions as Types
   * In Java, Lambda expressions let you express instances of single-method classes more compactly. They enable you to treat functionality as method argument (code as data), and functions as types.  The recipient of lambda's does not need to know that a Lambda is involved, instead it accepts an Interface with the appropriate method. The simplest way of setting all this up is by creating a functional interface. An example doing just this can be seen below:
