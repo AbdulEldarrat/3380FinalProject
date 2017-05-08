@@ -71,7 +71,7 @@ public int Age
     }
 }
 ```
-  * C# is absolutely able to use calculated values in getters and setters.
+  * C# is absolutely able to use calculated values. When returning or changing a value in a getter or setter, you can either return the value stored in memory or use 'compute' the value from other values in memory or completely customize it. Java and C# act very similarly when it comes to computed properties
 * 8)Interfaces / protocols
   * In C# an interface contains definitions for a group of related functionalities that either a class or a struct can implement. An interface in C# is used similarly to Java.
   * Abilities - Interfaces in C# can contain methods, properties, events, indexers, or any combination of these member types. An interface cannot however contain constants, fields, operators, instance constructors, destructors, or types. Instances can implement other interfaces.
